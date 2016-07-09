@@ -34,13 +34,7 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
 
     new WOW().init();
 
-    // $('.skill').circliful({
-    //   fgcolor: "#E64A3B",
-    //   fontsize: "20",
-    //   bgcolor: "#D8CDBB",
-    //   dimension: "150"
-
-    // });
+   
 
 
     $('.has-shadow').append('<div class="shadow"></div>');
