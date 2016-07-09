@@ -6666,6 +6666,7 @@ header {
 .paper .content {
   position: relative;
   z-index: 5;
+  font-size: 10px;
 }
 .paper:before {
   background-image: url(../images/noise.png);
@@ -6695,12 +6696,13 @@ header {
   min-width: 250px;
   position: absolute;
   left: 0;
-  top: 85px;
+  top: 60px;
   padding: 15px 25px 15px 50px;
 }
 .sticky-paper-head h1 {
   font-weight: 800!important;
   letter-spacing: -1px;
+  font-size: 20px;
 }
 .sticky-paper-head .content {
   position: relative;
@@ -7426,6 +7428,11 @@ header .avatar:after {
   display: inline-block;
   line-height: 23px;
 }
+
+.timeline-content img {
+  height:150px;
+  width:300px;
+}
 .timeline-content.right {
   margin-left: 11%;
 }
@@ -7465,21 +7472,22 @@ header .avatar:after {
 }
 /*profile*/
 .profile-item {
-  min-height: 90px;
+  min-height: 10px;
 }
 .profile-item .profile-content {
   width: 34%;
-  min-height: 65px;
+  min-height: 10px;
   padding: 15px;
 }
 .profile-item label {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 10px;
+  line-height: 5px;
 }
 .profile-item .value {
   text-transform: capitalize;
+  font-size: 10px;
 }
 /*Hobbie and interests*/
 .interests-holder {
@@ -7530,11 +7538,11 @@ header .avatar:after {
   text-align: center;
 }
 .interests-row.big li {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
 }
 .interests-row.big li span {
-  font-size: 16px;
+  font-size: 12px;
   width: 100%;
   height: 16px;
   line-height: 16px;
@@ -7547,8 +7555,8 @@ header .avatar:after {
   line-height: 20px;
 }
 .interests-row.medium li {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 .interests-row.medium li span {
   font-size: 12px;
@@ -7654,7 +7662,7 @@ header .avatar:after {
   content: "\f192";
   font-family: fontawesome;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   width: 25px;
   height: 25px;
   line-height: 25px;
@@ -7673,7 +7681,7 @@ header .avatar:after {
 }
 .event-title h1 {
   font-weight: 800!important;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 32px;
 }
 .event-title h4 {
@@ -7849,7 +7857,7 @@ header .avatar:after {
 .portfolio-holder .group-selectors a {
   margin: 0px 2px 10px 2px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 700;
   border-radius: 4px;
   background-color: #d8cdbb;
@@ -7918,7 +7926,7 @@ header .avatar:after {
 }
 .portfolio-holder .portfolio-item .title .content,
 .portfolio-holder .portfolio-item .category .content {
-  padding: 10px;
+  padding: 16px;
 }
 .portfolio-holder .portfolio-item .title {
   -webkit-transition: all 0.3s ease;
@@ -8304,7 +8312,7 @@ select.top-drop-menu {
 }
 @media (min-width: 100px) {
   .portfolio-holder .portfolio-item a {
-    min-height: 358px;
+    min-height: 158px;
   }
 }
 @media (max-width: 1199px) {
@@ -8488,7 +8496,7 @@ select.top-drop-menu {
     display: none;
   }
   .profile-item .value {
-    font-size: 12px;
+    font-size: 10px;
   }
   .profile-item label {
     font-size: 15px;
@@ -8548,7 +8556,7 @@ select.top-drop-menu {
     float: left;
 }
 .skill-title h3{
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     margin-top: -6px;
     text-transform: capitalize;
@@ -8627,7 +8635,7 @@ select.top-drop-menu {
     margin: auto;
     line-height: 140px;
     z-index: 2;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     text-align: center;
 }
@@ -8637,7 +8645,7 @@ select.top-drop-menu {
 }
 
 .chart-text span {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: capitalize;
     display: block;
@@ -8662,6 +8670,11 @@ select.top-drop-menu {
 
 .intro h1 span{
   color: #68c3a3;
+}
+
+.intro img{
+  width: 200px;
+  height: 200px;
 }
 
 .intro p{
