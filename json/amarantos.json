@@ -1,0 +1,13 @@
+{
+  "$jason": {
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://forum.amarantos.org",
+        "action": {
+          "type": "$default"
+        }
+      }
+    }
+  }
+}
