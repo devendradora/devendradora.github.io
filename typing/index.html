@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora Typing Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#2EC4B6',
+                        accent: '#FF9F1C',
+                        dark: '#011627',
+                        light: '#F7F9FC',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white shadow-lg">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold text-primary mb-4">Dora Typing Master</h1>
+                <!-- Name Input Section -->
+                <div class="mb-6">
+                    <div class="flex gap-2 mb-2 w-full">
+                        <input type="text" id="name-input" class="w-[85%] p-2 border rounded text-sm" placeholder="Enter your name">
+                        <button id="add-name-btn" class="bg-primary text-white w-[15%] rounded hover:bg-primary/90 flex items-center justify-center">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <select id="name-select" class="w-full p-2 border rounded text-sm">
+                        <option value="">Select a name</option>
+                    </select>
+                </div>
+                <div class="space-y-2" id="sections-container">
+                    <!-- Sections will be dynamically populated here -->
+                </div>
+                <button id="clear-data-btn" class="w-full text-left px-4 py-2 rounded hover:bg-red-200">
+                    <i class="fas fa-trash-alt mr-2"></i>Clear User Data
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-2">
+           
+            <div class="flex gap-8">
+                <!-- Left side: Keyboard and Typing Area -->
+                <div class="flex-1 max-w-[calc(100%-20rem)]">
+                    <!-- Keyboard Layout -->
+                    <div class="bg-white p-2 rounded-lg shadow mb-6">
+                        <div class="keyboard-container w-full">
+                            <!-- First Row: Special Characters -->
+                            <div class="flex gap-1 mb-1">
+                                <div class="key left-hand" data-key="`">`</div>
+                                <div class="key left-hand" data-key="1">!<br>1</div>
+                                <div class="key left-hand" data-key="2">@<br>2</div>
+                                <div class="key left-hand" data-key="3">#<br>3</div>
+                                <div class="key left-hand" data-key="4">$<br>4</div>
+                                <div class="key left-hand" data-key="5">%<br>5</div>
+                                <div class="key right-hand" data-key="6">^<br>6</div>
+                                <div class="key right-hand" data-key="7">&<br>7</div>
+                                <div class="key right-hand" data-key="8">*<br>8</div>
+                                <div class="key right-hand" data-key="9">(<br>9</div>
+                                <div class="key right-hand" data-key="0">)<br>0</div>
+                                <div class="key right-hand" data-key="-">_<br>-</div>
+                                <div class="key right-hand" data-key="=">+<br>=</div>
+                                <div class="key right-hand backspace" data-key="Backspace">Backspace</div>
+                            </div>
+                            <!-- Second Row: Letters -->
+                            <div class="flex gap-1 mb-1">
+                                <div class="key left-hand tab" data-key="Tab">Tab</div>
+                                <div class="key left-hand" data-key="q">Q</div>
+                                <div class="key left-hand" data-key="w">W</div>
+                                <div class="key left-hand" data-key="e">E</div>
+                                <div class="key left-hand" data-key="r">R</div>
+                                <div class="key left-hand" data-key="t">T</div>
+                                <div class="key right-hand" data-key="y">Y</div>
+                                <div class="key right-hand" data-key="u">U</div>
+                                <div class="key right-hand" data-key="i">I</div>
+                                <div class="key right-hand" data-key="o">O</div>
+                                <div class="key right-hand" data-key="p">P</div>
+                                <div class="key right-hand" data-key="[">[</div>
+                                <div class="key right-hand" data-key="]">]</div>
+                                <div class="key right-hand backslash" data-key="\"> \</div>
+                            </div>
+                            <!-- Third Row: More Letters -->
+                            <div class="flex gap-1 mb-1">
+                                <div class="key left-hand caps" data-key="Caps">Caps Lock</div>
+                                <div class="key left-hand" data-key="a">A</div>
+                                <div class="key left-hand" data-key="s">S</div>
+                                <div class="key left-hand" data-key="d">D</div>
+                                <div class="key left-hand" data-key="f">F</div>
+                                <div class="key left-hand" data-key="g">G</div>
+                                <div class="key right-hand" data-key="h">H</div>
+                                <div class="key right-hand" data-key="j">J</div>
+                                <div class="key right-hand" data-key="k">K</div>
+                                <div class="key right-hand" data-key="l">L</div>
+                                <div class="key right-hand" data-key=";">;</div>
+                                <div class="key right-hand" data-key="'">'</div>
+                                <div class="key right-hand enter" data-key="Enter">Enter</div>
+                            </div>
+                            <!-- Fourth Row: Bottom Letters -->
+                            <div class="flex gap-1 mb-1">
+                                <div class="key left-hand shift" data-key="Shift">Shift</div>
+                                <div class="key left-hand" data-key="z">Z</div>
+                                <div class="key left-hand" data-key="x">X</div>
+                                <div class="key left-hand" data-key="c">C</div>
+                                <div class="key left-hand" data-key="v">V</div>
+                                <div class="key left-hand" data-key="b">B</div>
+                                <div class="key right-hand" data-key="n">N</div>
+                                <div class="key right-hand" data-key="m">M</div>
+                                <div class="key right-hand" data-key=",">,</div>
+                                <div class="key right-hand" data-key=".">.</div>
+                                <div class="key right-hand" data-key="/">/</div>
+                                <div class="key right-hand shift" data-key="Shift">Shift</div>
+                            </div>
+                            <!-- Fifth Row: Control Keys -->
+                            <div class="flex gap-1">
+                                <div class="key left-hand ctrl" data-key="Ctrl">Ctrl</div>
+                                <div class="key left-hand win" data-key="Win">Win</div>
+                                <div class="key left-hand alt" data-key="Alt">Alt</div>
+                                <div class="key space" data-key=" ">Space</div>
+                                <div class="key right-hand alt" data-key="Alt">Alt</div>
+                                <div class="key right-hand win" data-key="Win">Win</div>
+                                <div class="key right-hand ctrl" data-key="Ctrl">Ctrl</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between mt-2">
+                            <span class="left-hand-label font-bold">Left Hand</span>
+                            <span class="right-hand-label font-bold">Right Hand</span>
+                        </div>
+                    </div>
+
+                     <!-- Section Title and Timer Controls -->
+            <div class="flex justify-between items-center mb-6">
+                <div class="bg-white p-2 rounded-lg shadow flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <h2 class="text-xl font-bold" id="current-section-title">No Section Selected</h2>
+                        <span class="text-gray-600">></span>
+                        <div class="flex items-center gap-2">
+                            <div class="relative">
+                                <select id="subsection-select" class="appearance-none bg-transparent border rounded px-3 py-1 pr-8 cursor-pointer">
+                                    <option value="">Select subsection</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                    <i class="fas fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </div>
+                            <button id="retry-btn" class="bg-primary text-white px-3 py-1 rounded hover:bg-primary/90">
+                                <i class="fas fa-redo"></i> Retry
+                            </button>
+                            <button id="next-subsection-btn" class="bg-primary text-white px-3 py-1 rounded hover:bg-primary/90">
+                                <i class="fas fa-arrow-right"></i> Next
+                            </button>
+                        </div>
+                    </div>
+                    <div class="border-l pl-6">
+                        <div class="text-gray-600">Time
+                            <select id="max-time-input" class="border rounded p-1 ml-2">
+                                <option value="1">1 min</option>
+                                <option value="2">2 min</option>
+                                <option value="3">3 min</option>
+                                <option value="5" selected>5 min</option>
+                                <option value="10">10 min</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button id="end-timer-btn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
+                            End
+                        </button>
+                    </div>
+                </div>
+                
+              
+            </div>
+
+            <!-- Typing Area -->
+            <div class="bg-white p-2 rounded-lg shadow">
+                <div id="target-text" class="text-xl mb-4 min-h-[150px] leading-relaxed"></div>
+                <textarea id="user-input" class="w-full p-4 border-2 border-gray-200 rounded-lg focus:border-primary focus:outline-none min-h-[180px]" 
+                    placeholder="Select a user and section, then click here to start typing..." disabled></textarea>
+            </div>
+            </div>
+
+                
+
+                <!-- Right side: Stats -->
+                <div class="w-72 mt-2 flex-shrink-0">
+                    <div class="flex gap-2">
+                        <button id="view-sessions-btn" class="w-full px-4 py-2 rounded bg-orange-500 text-white hover:bg-blue-600">
+                            View Historical Sessions
+                        </button>
+                    </div>
+                    
+                       <!-- Level Progress -->
+                       <div class="bg-white p-4 mt-4 rounded-lg shadow mb-4">
+                        <h3 class="text-lg font-bold mb-3 border-b pb-2">Level Progress</h3>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600 text-sm">Current Level:</span>
+                                <div class="group relative">
+                                    <span class="text-xl font-bold text-primary cursor-help" id="current-level">Beginner</span>
+                                    <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded py-2 px-3 whitespace-nowrap z-10">
+                                        <div class="space-y-1">
+                                            <div>Beginner: 0-20 WPM</div>
+                                            <div>Intermediate: 21-40 WPM</div>
+                                            <div>Advanced: 41-60 WPM</div>
+                                            <div>Expert: 61-80 WPM</div>
+                                            <div>Master: 81+ WPM</div>
+                                        </div>
+                                        <div class="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-gray-800 transform rotate-45"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Current Session Stats -->
+                     <div class="bg-white p-4 rounded-lg shadow mb-4">
+                        <h3 class="text-lg font-bold mb-3 border-b pb-2">Current Session Stats</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">WPM</div>
+                                <div class="text-2xl font-bold text-primary" id="wpm">0</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Accuracy</div>
+                                <div class="text-2xl font-bold text-primary" id="accuracy">100%</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Time</div>
+                                <div class="text-2xl font-bold text-primary" id="time">0s</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Chars</div>
+                                <div class="text-2xl font-bold text-primary">
+                                    <span id="current-correct-chars">0</span>/<span id="current-total-chars">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+
+                    <!-- Global Stats -->
+                    <div class="bg-white p-4 rounded-lg shadow mb-4">
+                        <h3 class="text-lg font-bold mb-3 border-b pb-2">Global Session Stats</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">WPM</div>
+                                <div class="text-2xl font-bold text-primary" id="global-wpm">0</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Accuracy</div>
+                                <div class="text-2xl font-bold text-primary" id="global-accuracy">100%</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Time</div>
+                                <div class="text-2xl font-bold text-primary" id="global-time">0s</div>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <div class="text-gray-600 text-sm">Sessions</div>
+                                <div class="text-2xl font-bold text-primary" id="session-count">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                 
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Sessions Modal -->
+    <div id="sessions-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">Historical Sessions</h2>
+                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="session-table" class="overflow-y-auto max-h-[80vh]">
+                <table class="min-w-full border-collapse border border-gray-300">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="border border-gray-300 p-3 text-left">Date</th>
+                            <th class="border border-gray-300 p-3 text-left">WPM</th>
+                            <th class="border border-gray-300 p-3 text-left">Accuracy</th>
+                            <th class="border border-gray-300 p-3 text-left">Time</th>
+                            <th class="border border-gray-300 p-3 text-left">Section</th>
+                        </tr>
+                    </thead>
+                    <tbody id="session-data" class="bg-white">
+                        <!-- Session data will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

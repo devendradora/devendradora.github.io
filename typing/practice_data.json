@@ -1,0 +1,298 @@
+{
+    "homeRow": {
+        "title": "Home Row",
+        "icon": "fa-home",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1 (asdf)",
+                "text": "asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2 (fdsa)",
+                "text": "fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa\n",
+                "repeat": 5
+            },
+            "basicDrillLeft3": {
+                "title": "Basic Drill Left Hand 3 (asdfg)",
+                "text": "asdfg asdfg asdfg asdfg asdfg asdfg asdfg asdfg asdfg\n",
+                "repeat": 5
+            },
+            "basicDrillLeft4": {
+                "title": "Basic Drill Left Hand 4 (gfdsa)",
+                "text": "gfdsa gfdsa gfdsa gfdsa gfdsa gfdsa gfdsa gfdsa gfdsa\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1 (jkl;)",
+                "text": "jkl; jkl; jkl; jkl; jkl; jkl; jkl; jkl; jkl; jkl; jkl;\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2 (;lkj)",
+                "text": ";lkj ;lkj ;lkj ;lkj ;lkj ;lkj ;lkj ;lkj ;lkj ;lkj ;lkj\n",
+                "repeat": 5
+            },
+            "basicDrillRight3": {
+                "title": "Basic Drill Right Hand 3 (hjkl;)",
+                "text": "hjkl; hjkl; hjkl; hjkl; hjkl; hjkl; hjkl; hjkl; hjkl\n",
+                "repeat": 5
+            },
+            "basicDrillRight4": {
+                "title": "Basic Drill Right Hand 4 (;lkjh)",
+                "text": ";lkjh ;lkjh ;lkjh ;lkjh ;lkjh ;lkjh ;lkjh ;lkjh ;lkjh\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "asdf jkl; asdf jkl; asdf jkl; asdf jkl; asdf jkl;\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "sad fall ask dad\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "flask slash falls\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "dad has a sad fall.\n",
+                "repeat": 5
+            }
+        }
+    },
+    "topRow": {
+        "title": "Top Row",
+        "icon": "fa-arrow-up",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1",
+                "text": "qwer qwer qwer\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2",
+                "text": "qwert qwert qwert\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1",
+                "text": "yuiop yuiop yuiop\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2",
+                "text": "tyuiop tyuiop tyuiop\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "qwer yuiop qwer yuiop\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "type quit your\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "quiet power type\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "type your way up.\n",
+                "repeat": 5
+            }
+        }
+    },
+    "bottomRow": {
+        "title": "Bottom Row",
+        "icon": "fa-arrow-down",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1",
+                "text": "zxcv zxcv zxcv\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2",
+                "text": "zxcvb zxcvb zxcvb\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1",
+                "text": "nm,. nm,. nm,.\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2",
+                "text": "bnm,. bnm,. bnm,.\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "zxcv nm,. zxcv nm,.\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "zen mix van\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "zebra mixer venom\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "mix the zen vibe.\n",
+                "repeat": 5
+            }
+        }
+    },
+    "numbers": {
+        "title": "Numbers",
+        "icon": "fa-hashtag",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1",
+                "text": "1234 1234 1234\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2",
+                "text": "12345 12345 12345\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1",
+                "text": "7890 7890 7890\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2",
+                "text": "67890 67890 67890\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "1234 7890 1234 7890\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "123 456 789\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "12345 67890\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "1234 plus 5678 equals 6912.\n",
+                "repeat": 5
+            }
+        }
+    },
+    "specialChars": {
+        "title": "Special Characters",
+        "icon": "fa-at",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1",
+                "text": "!@#$ !@#$ !@#$\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2",
+                "text": "!@#$% !@#$% !@#$%\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1",
+                "text": "&*() &*() &*()\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2",
+                "text": "^&*() ^&*() ^&*()\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "!@#$ &*() !@#$ &*()\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "!@# $%^ &*()\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "!@#$% ^&*()\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "Type @username with #hashtag!\n",
+                "repeat": 5
+            }
+        }
+    },
+    "fullKeyboard": {
+        "title": "Full Keyboard",
+        "icon": "fa-keyboard",
+        "subsections": {
+            "basicDrillLeft1": {
+                "title": "Basic Drill - Left Hand 1",
+                "text": "qwer asdf zxcv\n",
+                "repeat": 5
+            },
+            "basicDrillLeft2": {
+                "title": "Basic Drill - Left Hand 2",
+                "text": "qwert asdfg zxcvb\n",
+                "repeat": 5
+            },
+            "basicDrillRight1": {
+                "title": "Basic Drill - Right Hand 1",
+                "text": "yuiop jkl; nm,.\n",
+                "repeat": 5
+            },
+            "basicDrillRight2": {
+                "title": "Basic Drill - Right Hand 2",
+                "text": "tyuiop hjkl; bnm,.\n",
+                "repeat": 5
+            },
+            "mixedDrill": {
+                "title": "Mix Up of Both Hands",
+                "text": "The quick brown fox jumps over the lazy dog.\n",
+                "repeat": 5
+            },
+            "basicWords": {
+                "title": "Basic Words",
+                "text": "type fast and well\n",
+                "repeat": 5
+            },
+            "biggerWords": {
+                "title": "Bigger Words",
+                "text": "quickly master typing\n",
+                "repeat": 5
+            },
+            "sentences": {
+                "title": "Sentences",
+                "text": "Practice makes perfect typing skills!\n",
+                "repeat": 5
+            }
+        }
+    }
+} 
